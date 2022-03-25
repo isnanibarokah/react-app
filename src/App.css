@@ -1,9 +1,16 @@
 body {
-  margin: 40px 0;
+  margin: 40px;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gif {
   display: flex;
   flex-direction: column;
   align-items: center;
