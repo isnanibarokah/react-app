@@ -1,11 +1,11 @@
 const Searchbar = () => {
     return (
-        <form id="form" className="formSearch">
-          <div className="form-group">
-            <input type="text" name="title"/>
-            <button id="btnSearch" type="submit">Search</button>
-          </div>
-        </form>
+      <form className="formSearch">
+        <div className="form-group">
+          <input type="text" name="query" placeholder="Search gif..." required />
+          <input type="submit" id="btnSearch" value="Search" />
+        </div>
+      </form>
     );
   };
   
