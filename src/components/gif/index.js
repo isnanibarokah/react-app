@@ -1,10 +1,10 @@
 const Gif = ({ title, url }) => {
-    return (
-      <>
-        <h3>{title}</h3>
-        <img src={url} alt={title} />
-      </>
-    )
-  }
+  return (
+    <div className="card-gif">
+      <p>{title}</p>
+      <img src={url} alt={title} />
+    </div>
+  );
+};
   
-  export default Gif
+export default Gif;
