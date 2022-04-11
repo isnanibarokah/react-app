@@ -1,12 +1,8 @@
-import Mario from "./pages/home";
 import "./App.css";
+import SearchGif from "./pages/searchgif";
 
 
 function App() {
-  return (
-    <div className="App">
-      <Mario />
-    </div>
-  );
+  return <SearchGif />;
 }
 export default App;
