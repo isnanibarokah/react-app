@@ -1,8 +1,8 @@
 import "./App.css";
-import SearchGif from "./pages/searchgif";
+import Home from "./pages/home";
 
 
 function App() {
-  return <SearchGif />;
+  return <Home />;
 }
 export default App;
