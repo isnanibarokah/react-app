@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setQuery } from "../../searchSlice";
+
 
 export default function SearchBar({ onSuccess }) {
-  const [text, setText] = useState("");
+  const text = useSelector((state) => state.search.query);
+    const dispatch = useDispatch();
 
   const getImages = async (query) => {
     const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
@@ -19,7 +23,7 @@ export default function SearchBar({ onSuccess }) {
   };
 
   const handleChange = async (e) => {
-    setText((prevState) => (prevState = e.target.value));
+    dispatch(setQuery(e.target.value));
 
     const images = await getImages(text);
     onSuccess(images);
