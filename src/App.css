@@ -11,6 +11,22 @@ body {
   padding: 30px;
 }
 
+.ghipy-box {
+  /* border-radius: 10px; */
+  padding: 15px;
+  /* background-color: #cfdff1;
+  box-shadow: 2px 2px 5px rgb(78, 39, 2); */
+  text-align: center;
+}
+
+.ghipy-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
 .container h1 {
   margin: 10px 0 0 8px;
 }

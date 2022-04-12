@@ -14,13 +14,17 @@ export default function SearchGif() {
       <div className="container">
         <h1>GHIPY YEAY</h1>
         <SearchBar onSuccess={onSuccess} />
-        {images.map((image) => (
-          <Gif
-            url={image.images.fixed_width.url}
-            title={image.title}
-            key={image.id}
-          />
-        ))}
+        <div className="ghipy-box">
+            <div className="ghipy-list">
+              {images.map((image) => (
+                <Gif
+                  url={image.images.fixed_width.url}
+                  title={image.title}
+                  key={image.id}
+                />
+              ))}
+            </div>
+        </div>
       </div>
     );
   }
