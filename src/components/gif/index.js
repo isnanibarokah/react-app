@@ -1,10 +1,8 @@
-const Gif = ({ title, url }) => {
+export default function Gif({ title, url }) {
   return (
-    <div className="card-gif">
-      <p>{title}</p>
-      <img src={url} alt={title} />
-    </div>
+      <div className="card-gif">
+          <img src={url} alt={title} />
+          <p>{title}</p>
+      </div>
   );
-};
-  
-export default Gif;
+}
